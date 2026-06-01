@@ -1,3 +1,14 @@
+:root {
+  --color-primary: #6750A4;
+  --color-on-primary: #FFFFFF;
+
+  --color-primary-container: #EADDFF;
+  --color-on-primary-container: #4c246d;
+
+  --color-surface: #F7F2FA;
+  --color-outline: #CAC4D0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,49 +18,54 @@
 .layout {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px auto auto 60px;
+  grid-template-rows: 70px auto auto 60px;
   grid-template-areas:
     "navbar"
     "filter-box"
     "container-cards"
     "footer";
   min-height: 100vh;
+  width: 100%;
 }
 
 /* Barra de navegacion */
 .navbar {
+  background-color: var(--color-on-primary-container);
   display: grid;
   grid-area: navbar;
-  border: 1px solid red;
   width: 100%;
+  color: var(--color-on-primary);
 }
 
 .container-nav {
-  border: 1px solid chartreuse;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .titulo-logo {
   display: flex;
   align-items: center;
+  gap: 10px;
+  color:var(--color-on-primary);
 }
 
 .navbar img {
   height: 30px;
+  color: var(--color-on-primary);
 }
 
 .hamburger {
-  background-color: white;
+  background-color:var(--color-on-primary-container);
   border: none;
   font-size: 25px;
 }
 
 button {
-  background-color: white;
+  background-color: var(--color-on-primary-container);
+  color: #FFFFFF;
   display: block;
   font-size: 25px;
   border-style: none;
@@ -58,15 +74,15 @@ button {
 /* Filter-Section */
 
 .filter-box {
-  background-color: rgb(212, 212, 212);
-  border: 1px solid coral;
+  background-color:var(--color-primary-container);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   grid-area: filter-box;
-  text-align: center;
   gap: 10px;
+  padding: 15px;
   width: 100%;
-  padding: 25px;
 }
 
 .filter-box p{
@@ -74,7 +90,8 @@ button {
 }
 
 #cars {
-  width: 100%;
+width: 100%;
+  max-width: 500px;
   padding: 10px;
 }
 
@@ -88,6 +105,7 @@ button {
   border: 1px solid blue;
   width: 100%;
   gap: 20px;
+  padding: 20px;
 }
 
 .card {
@@ -117,7 +135,7 @@ button {
 }
 
 .btn button {
-  background-color: rgb(255, 0, 119);
+  background-color: var(--color-primary);
   border-radius: 5px;
   color: white;
   font-size: 15px;
@@ -143,7 +161,9 @@ padding: 15px;
 }
 
 .footer {
+    background-color: var(--color-primary);
  display: flex;
+ align-items: center;
  justify-content: center;
   grid-area: footer;
   border: 1px solid orange;
