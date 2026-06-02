@@ -1,165 +1,178 @@
 <!doctype html>
 <html lang="es" translate="no">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electric Car Store</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-  <body class="layout">
+<body class="layout">
 
-    <header class="navbar">
-      <nav class="container-nav">
-        <div class="titulo-logo">
-          <img src="./assets/images/logo-car-electric.svg" alt="" />
-          <h2>Electric-car</h2>
-        </div>
+  <!-- NAVBAR -->
 
-        <div class="hamburger">
-          <button >☰</button>
-        </div>
+  <header class="navbar">
+    <div class="container-nav">
+
+      <div class="titulo-logo">
+        <img src="./assets/images/logo-car-electric.svg" alt="Logo Electric Car">
+        <h2>Electric Car</h2>
+      </div>
+
+      <nav class="hamburger">
+        <a href="#">Inicio</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+
+        <button>
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
-    </header>
 
-    <!-- Filtro precios -->
-    <section class="filter-box">
+    </div>
+  </header>
 
-      <p>Ordenado por:</p>
-      <select name="cars" id="cars">
-        <option>Precio</option>
-        <option>Precio mayor a menor</option>
-        <option>Marca</option>
-      </select>
-    </section>
+  <!-- FILTRO -->
 
-    <main class="container-cards">
+  <section class="filter-box">
 
-        <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/auto-rosa.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <p>Ordenado por:</p>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+    <select name="cars" id="cars">
+      <option>Precio</option>
+      <option>Precio mayor a menor</option>
+      <option>Marca</option>
+    </select>
+
+  </section>
+
+  <!-- PRODUCTOS -->
+
+  <main class="container-cards">
+
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/auto-rosa.jpg" alt="Auto eléctrico rosa">
+        <h5>Modelo: City Car</h5>
+
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-              <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/auto-blanco-grande.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/auto-blanco-grande.jpg" alt="Auto eléctrico blanco">
+        <h5>Modelo: City Car</h5>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-                    <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/auto-naranja.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/auto-naranja.jpg" alt="Auto eléctrico naranja">
+        <h5>Modelo: City Car</h5>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-        <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/gris-fiat.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/gris-fiat.jpg" alt="Auto eléctrico gris">
+        <h5>Modelo: City Car</h5>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-         <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/auto-azul-negro.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/auto-azul-negro.jpg" alt="Auto eléctrico azul">
+        <h5>Modelo: City Car</h5>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-        <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/auto-verde.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/auto-verde.jpg" alt="Auto eléctrico verde">
+        <h5>Modelo: City Car</h5>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-        <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/auto-blanco-chico.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/auto-blanco-chico.jpg" alt="Auto eléctrico compacto">
+        <h5>Modelo: City Car</h5>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-              <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <img src="./assets/images/verde-blanco.jpg" alt="auto-rosa" />
-          <h5 class="card-title">Modelo: City Car</h5>
+    <article class="card">
+      <div class="card-body">
+        <img src="./assets/images/verde-blanco.jpg" alt="Auto eléctrico verde y blanco">
+        <h5>Modelo: City Car</h5>
 
-          <div class="btn">
-          <button >
-            <p class="card-text">Ver mas</p>
-          </button>
-          </div>
+        <div class="btn">
+          <button>Ver más</button>
         </div>
       </div>
+    </article>
 
-      <div class="next">
-        <a href="#">
-           <i class="fa-solid fa-angles-left"></i> 
-        </a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">
-           <i class="fa-solid fa-angles-right"></i>
-        </a>
-      </div>
+  </main>
 
-    </main>
+  <!-- PAGINACIÓN -->
 
-    <footer class="footer">
-        <p><p>© 2026 City Car Rose | Conduciendo hacia el futuro.</p></p>
-    </footer>
+  <section class="paginacion">
 
-    <script
-      src="https://kit.fontawesome.com/aaba1f8136.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="next">
+
+      <a href="#">
+        <i class="fa-solid fa-angles-left"></i>
+      </a>
+
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+
+      <a href="#">
+        <i class="fa-solid fa-angles-right"></i>
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <p>© 2026 City Car Rose | Conduciendo hacia el futuro.</p>
+  </footer>
+
+  <script
+    src="https://kit.fontawesome.com/aaba1f8136.js"
+    crossorigin="anonymous">
+  </script>
+
+</body>
 </html>
